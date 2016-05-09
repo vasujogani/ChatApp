@@ -1,3 +1,7 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 interface IServer 
 {
 	//This will send the data to all clients that are connected to this server
@@ -16,4 +20,7 @@ interface IServer
 	public void stop();
 	
 	public IClient[] getClients();
+
+	//return the file
+	public File getFile();
 }
